@@ -1,7 +1,3 @@
-Here’s an updated version of your README snippet with a **bash usage example** added, demonstrating how to generate RGB sub-aperture images from NISAR RSLC data:
-
----
-
 # nisar-prism
 
 Generate **RGB sub-aperture radar images** from NISAR RSLC data with a prism-like visualization.
