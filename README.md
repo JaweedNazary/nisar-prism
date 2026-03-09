@@ -44,13 +44,15 @@ python -m nisar_prism.cli path\to\your\nisar_file.h5 --lat 24.124 --lon 69.339 -
 
 ### Parameters
 
-* `--input` : Path to the RSLC HDF5 file.
-* `--lat` / `--lon` : Geographic coordinates of the site of interest. This need to be within the RSLC frame.
-* * `--output` : Path to save the generated RGB image.
-* `--subapertures` : Number of azimuth sub-apertures to extract (commonly 3 for RGB).
-* `--freq` : which frequency to use.  frequencyA, or frequencyB for now. 
-* `--pol`: which polarization to use. HH and VV works best for man-made objects.
-* `--size`: This tells the code the size of the tile within the whole NISAR scene to process. NISAR files are huge, tens of GB. Use somethign like 50000 to 8000. otherwise you will run out of memory. 
+* `--input` : Path to the RSLC HDF5 file containing the SAR data.
+* `--lat` / `--lon` : Latitude and longitude of the target site. Must be within the RSLC frame.
+* `--output` : File path to save the generated RGB image.
+* `--subapertures` : Number of azimuth sub-apertures to extract (typically 3 for RGB visualization).
+* `--freq` : Frequency band to use. Options: `frequencyA` or `frequencyB`.
+* `--pol` : Polarization to use. `HH` or `VV` are recommended for man-made structures.
+* `--size` : Tile size to process within the full NISAR scene. NISAR RSLC files are large (tens of GB), so use a value like `5000`–`8000` to avoid running out of memory.
+
+
 
 The resulting image visualizes azimuth-dependent backscatter differences as red, green, and blue channels, highlighting anisotropic scattering features in the scene.
 
