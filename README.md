@@ -60,8 +60,12 @@ The resulting image visualizes azimuth-dependent backscatter differences as red,
 
 This colorized sub-aperture radar image, derived from L-band RSLC products from the NASA–ISRO Synthetic Aperture Radar, highlights an energy park within the salt-marsh landscape near the Luni River terminus in the Rann of Kutch, India. (lat = 24.124 and lon = 69.339)
 
-<img width="1542" height="1536" alt="image" src="https://github.com/user-attachments/assets/d8135d40-77e0-44e9-be73-74e9a629cda1" />
+<img width="937" height="930" alt="image" src="https://github.com/user-attachments/assets/69af09c0-170b-45c5-a536-0f91021fb1b6" />
 
+
+This sites shows the solar farm in Willow Spring, California. (lat = 34.877957, lon = -118.306443)
+
+<img width="940" height="933" alt="image" src="https://github.com/user-attachments/assets/91b6a1c1-658b-49a7-b0ea-aa64b7ac1722" />
 
 ---
 Why the “Rainbow Effect” Appears
