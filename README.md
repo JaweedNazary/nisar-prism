@@ -37,8 +37,10 @@ Generate an RGB sub-aperture image from a NISAR RSLC H5 file:
 
 ```bash
 # Example: generate RGB sub-aperture images
-python -m nisar_prism.cli path\to\your\nisar_file.h5 --lat 24.01 --lon 69.52 --freq frequencyA --pol HH --size 5000
+python -m nisar_prism.cli path\to\your\nisar_file.h5 --lat 24.124 --lon 69.339 --freq frequencyA --pol HH --size 5000
 ```
+
+
 
 ### Parameters
 
@@ -48,6 +50,13 @@ python -m nisar_prism.cli path\to\your\nisar_file.h5 --lat 24.01 --lon 69.52 --f
 * `--subapertures` : Number of azimuth sub-apertures to extract (commonly 3 for RGB).
 
 The resulting image visualizes azimuth-dependent backscatter differences as red, green, and blue channels, highlighting anisotropic scattering features in the scene.
+
+### Output
+
+This colorized sub-aperture radar image, derived from L-band RSLC products from the NASA–ISRO Synthetic Aperture Radar, highlights an energy park within the salt-marsh landscape near the Luni River terminus in the Rann of Kutch, India. (lat = 24.124 and lon = 69.339)
+
+<img width="1542" height="1536" alt="image" src="https://github.com/user-attachments/assets/d8135d40-77e0-44e9-be73-74e9a629cda1" />
+
 
 ---
 Why the “Rainbow Effect” Appears
