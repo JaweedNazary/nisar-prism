@@ -46,11 +46,11 @@ python -m nisar_prism.cli path\to\your\nisar_file.h5 --lat 24.124 --lon 69.339 -
 
 * `--input` : Path to the RSLC HDF5 file containing the SAR data.
 * `--lat` / `--lon` : Latitude and longitude of the target site. Must be within the RSLC frame.
-* `--output` : File path to save the generated RGB image.
-* `--subapertures` : Number of azimuth sub-apertures to extract (typically 3 for RGB visualization).
 * `--freq` : Frequency band to use. Options: `frequencyA` or `frequencyB`.
 * `--pol` : Polarization to use. `HH` or `VV` are recommended for man-made structures.
 * `--size` : Tile size to process within the full NISAR scene. NISAR RSLC files are large (tens of GB), so use a value like `5000`–`8000` to avoid running out of memory.
+* `--looks` : Number of azimuth sub-apertures to extract (typically 3 for RGB visualization).
+* `--out` : File path to save the generated RGB image.
 
 
 
