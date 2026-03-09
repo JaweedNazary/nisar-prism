@@ -26,9 +26,7 @@ The **sub-aperture SAR method** used in this package is based on the work of Fer
 Recommended: use a Python virtual environment.
 
 ```bash
-git clone https://github.com/JaweedNazary/nisar-prism.git
-cd nisar-prism
-pip install -e .
+pip install git+https://github.com/JaweedNazary/nisar-prism.git
 ```
 
 ---
@@ -39,11 +37,7 @@ Generate an RGB sub-aperture image from a NISAR RSLC H5 file:
 
 ```bash
 # Example: generate RGB sub-aperture images
-nisar-prism \
-    --input /path/to/RSLC_file.h5 \
-    --lat 69.34 --lon 24.14 \
-    --output /path/to/output_image.png \
-    --subapertures 3
+python -m nisar_prism.cli path\to\your\nisar_file.h5 --lat 24.01 --lon 69.52 --freq frequencyA --pol HH --size 5000
 ```
 
 ### Parameters
