@@ -75,6 +75,13 @@ def main():
     plt.imshow(rgb, origin="lower")
     plt.axis("off")
 
-    plt.savefig(args.out, dpi=200)
+    plt.savefig(args.out, dpi=300)
+    plt.close()  
 
-    print(f"RGB image saved to {args.out}")
+    print(f"✅ RGB image successfully created and saved at: {args.out}")
+
+
+if __name__ == "__main__":
+    main()
+
+
