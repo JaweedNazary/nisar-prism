@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nisar-prism"
+version = "0.1.0"
+description = "Tools for generating RGB sub-aperture radar images from NISAR RSLC data."
+authors = [{name="Your Name"}]
+dependencies = [
+    "numpy",
+    "h5py",
+    "scipy",
+    "pyproj",
+    "matplotlib",
+    "pillow"
+]
+
+[project.scripts]
+nisar-prism = "nisar_prism.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["nisar_prism*"]
